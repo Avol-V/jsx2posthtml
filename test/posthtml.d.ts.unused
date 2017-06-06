@@ -1,0 +1,13 @@
+declare module 'posthtml-parser'
+{
+	function parser( html: string ): JSX.Element[];
+	
+	export = parser;
+}
+
+declare module 'posthtml-render'
+{
+	function render( tree: JSX.Element[] | JSX.Element ): string;
+	
+	export = render;
+}

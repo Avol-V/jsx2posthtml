@@ -1,0 +1,59 @@
+{
+  "name": "jsx2posthtml",
+  "version": "1.0.0",
+  "description": "Converts JSX to PostHTML node",
+  "main": "./es2015-cjs/index.js",
+  "module": "./es5-esm/index.js",
+  "types": "./es2015/index.d.ts",
+  "scripts": {
+    "test": "npm run lint && npm run test:main",
+    "test:main": "cross-env TS_NODE_PROJECT=test/tsconfig.json mocha --compilers ts:ts-node/register,tsx:ts-node/register",
+    "lint:scripts-project": "tslint -c tslint-type-check.json -p tsconfig.json --type-check",
+    "lint:scripts-other": "tslint \"{*.js,src/*.d.ts,test/*.{ts,tsx}}\"",
+    "lint": "npm run lint:scripts-project && npm run lint:scripts-other",
+    "clean": "rimraf es2015 es2015-cjs es5-esm es5",
+    "build": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir ./es2015-cjs",
+    "build:es5": "tsc --target es5 --outDir ./es5-esm",
+    "build:umd": "rollup -c",
+    "build:all": "npm run build && npm run build:cjs && npm run build:es5 && npm run build:umd",
+    "minify": "uglifyjs ./es5/index.js -c -m -o ./es5/jsx2posthtml.min.js",
+    "prepublish": "npm run test && npm run clean && npm run build:all && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m18ru/jsx2posthtml.git"
+  },
+  "keywords": [
+    "hyperscript",
+    "html",
+    "renderer",
+    "jsx",
+    "posthtml"
+  ],
+  "author": "Andrey Avol Volynkin <code@m18.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m18ru/jsx2posthtml/issues"
+  },
+  "homepage": "https://github.com/m18ru/jsx2posthtml#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.27",
+    "chai": "^4.0.1",
+    "cross-env": "^5.0.0",
+    "mocha": "^3.4.2",
+    "posthtml-parser": "^0.2.1",
+    "posthtml-render": "^1.0.6",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "ts-node": "^3.0.4",
+    "tslib": "^1.7.1",
+    "tslint": "^5.3.2",
+    "tslint-config-m18": "^1.2.0",
+    "typescript": "^2.3.4",
+    "uglify-js": "^3.0.14"
+  }
+}

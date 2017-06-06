@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Build files
+/es5/
+/es5-esm/
+/es2015/
+/es2015-cjs/
