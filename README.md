@@ -1,5 +1,6 @@
 [![NPM][npm]][npm-url]
-[![Deps][deps]][deps-url]
+[![Dependencies][deps]][deps-url]
+[![DevDependencies][deps-dev]][deps-dev-url]
 [![Tests][build]][build-url]
 
 # jsx2posthtml
@@ -232,8 +233,11 @@ You can find more examples in [tests](test/index.tsx).
 [npm]: https://img.shields.io/npm/v/jsx2posthtml.svg
 [npm-url]: https://npmjs.com/package/jsx2posthtml
 
-[deps]: https://david-dm.org/m18ru/jsx2posthtml.svg
+[deps]: https://img.shields.io/david/m18ru/jsx2posthtml.svg
 [deps-url]: https://david-dm.org/m18ru/jsx2posthtml
 
-[build]: https://travis-ci.org/m18ru/jsx2posthtml.svg?branch=master
+[deps-dev]: https://img.shields.io/david/dev/m18ru/jsx2posthtml.svg
+[deps-dev-url]: https://david-dm.org/m18ru/jsx2posthtml?type=dev
+
+[build]: https://img.shields.io/travis/m18ru/jsx2posthtml.svg
 [build-url]: https://travis-ci.org/m18ru/jsx2posthtml
