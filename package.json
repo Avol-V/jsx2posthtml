@@ -6,8 +6,9 @@
   "module": "./es5-esm/index.js",
   "types": "./es2015/index.d.ts",
   "scripts": {
-    "test": "npm run lint && npm run test:main",
+    "test": "npm run lint && if-env NODE_TEST_VARIANT=es5 && npm run test:es5-only || npm run test:main",
     "test:main": "cross-env TS_NODE_PROJECT=test/tsconfig.json mocha --compilers ts:ts-node/register,tsx:ts-node/register",
+    "test:es5-only": "mocha",
     "lint:scripts-project": "tslint -c tslint-type-check.json -p tsconfig.json --type-check",
     "lint:scripts-other": "tslint \"{*.js,src/*.d.ts,test/*.{ts,tsx}}\"",
     "lint": "npm run lint:scripts-project && npm run lint:scripts-other",
@@ -44,6 +45,7 @@
     "@types/node": "^7.0.28",
     "chai": "^4.0.2",
     "cross-env": "^5.0.0",
+    "if-env": "^1.0.0",
     "mocha": "^3.4.2",
     "posthtml-parser": "^0.2.1",
     "posthtml-render": "^1.0.6",

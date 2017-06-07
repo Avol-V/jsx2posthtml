@@ -1,5 +1,8 @@
 language: node_js
-node_js:
-  - 6
-  - 7
-  - 8
+
+matrix:
+  include:
+    - node_js: '4'
+      env: NODE_TEST_VARIANT=es5
+    - node_js: '6'
+    - node_js: '8'
