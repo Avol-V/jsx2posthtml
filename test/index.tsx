@@ -1,9 +1,3 @@
-/*
-// TODO: Did not work with ts-node
-// tslint:disable-next-line:no-reference
-/// <reference path="./posthtml.d.ts" />
-*/
-
 import {expect} from 'chai';
 import 'mocha';
 import h from '../src/index';
@@ -565,11 +559,6 @@ describe(
 		
 	},
 );
-
-/*
-// TODO: Did not work with ts-node
-import * as parser from 'posthtml-parser';
-*/
 
 describe(
 	'With posthtml-parser',
