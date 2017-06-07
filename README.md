@@ -1,3 +1,5 @@
+[![NPM][npm]][npm-url]
+[![Deps][deps]][deps-url]
 [![Tests][build]][build-url]
 
 # jsx2posthtml
@@ -226,6 +228,12 @@ You can find more examples in [tests](test/index.tsx).
 ## License
 
 [MIT](LICENSE).
+
+[npm]: https://img.shields.io/npm/v/jsx2posthtml.svg
+[npm-url]: https://npmjs.com/package/jsx2posthtml
+
+[deps]: https://david-dm.org/m18ru/jsx2posthtml.svg
+[deps-url]: https://david-dm.org/m18ru/jsx2posthtml
 
 [build]: https://travis-ci.org/m18ru/jsx2posthtml.svg?branch=master
 [build-url]: https://travis-ci.org/m18ru/jsx2posthtml
