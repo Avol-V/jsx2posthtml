@@ -1,6 +1,7 @@
 [![NPM][npm]][npm-url]
 [![Dependencies][deps]][deps-url]
 [![DevDependencies][deps-dev]][deps-dev-url]
+[![OptionalDependencies][deps-optional]][deps-optional-url]
 [![Tests][build]][build-url]
 
 # jsx2posthtml
@@ -24,6 +25,11 @@ npm install --save-dev jsx2posthtml
 ```
 
 Types for TypeScript are included.
+
+Package `tslib` is in optional dependencies because it is required only for
+**ES5 code with ES2015 module systems** version (and for development) to use
+`__assign` helper function, and did not required for other versions (in **UMD**
+version this function bundled, in ES2015 it’s not required at all).
 
 ### ES2015 CommonJS
 
@@ -238,6 +244,9 @@ You can find more examples in [tests](test/index.tsx).
 
 [deps-dev]: https://img.shields.io/david/dev/m18ru/jsx2posthtml.svg
 [deps-dev-url]: https://david-dm.org/m18ru/jsx2posthtml?type=dev
+
+[deps-optional]: https://img.shields.io/david/optional/m18ru/jsx2posthtml.svg
+[deps-optional-url]: https://david-dm.org/m18ru/jsx2posthtml?type=optional
 
 [build]: https://img.shields.io/travis/m18ru/jsx2posthtml.svg
 [build-url]: https://travis-ci.org/m18ru/jsx2posthtml
