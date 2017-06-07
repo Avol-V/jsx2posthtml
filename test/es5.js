@@ -31,7 +31,7 @@ describe(
 								'ul',
 								null,
 								items.map(
-									function( item )
+									function ( item )
 									{
 										return h( 'li', null, item );
 									}
@@ -90,7 +90,7 @@ describe(
 								'ul',
 								null,
 								items.map(
-									function( item, index )
+									function ( item, index )
 									{
 										return h(
 											Item,
