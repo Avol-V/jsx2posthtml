@@ -11,13 +11,13 @@ var h = require( '../es5/index' );
 
 describe(
 	'ES5 version',
-	function()
+	function ()
 	{
 		var render = require( 'posthtml-render' );
 		
 		it(
 			'should render to HTML',
-			function()
+			function ()
 			{
 				var items = ['one', 'two', 'three'];
 				
@@ -47,7 +47,7 @@ describe(
 		
 		it(
 			'should sanitize children',
-			function()
+			function ()
 			{
 				expect(
 					render(
@@ -66,7 +66,7 @@ describe(
 		
 		it(
 			'should support sortof components',
-			() =>
+			function ()
 			{
 				var items = ['one', 'two'];
 				
@@ -110,7 +110,7 @@ describe(
 					+ '<h2>one</h2>This is item one!</li><li id="item-1">'
 					+ '<h2>two</h2>This is item two!</li></ul></div>'
 				);
-			},
+			}
 		);
 		
 	}
