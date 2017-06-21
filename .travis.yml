@@ -4,5 +4,9 @@ matrix:
   include:
     - node_js: '4'
       env: NODE_TEST_VARIANT=es5
+      before_install:
+        - npm install -g npm@4
     - node_js: '6'
+      before_install:
+        - npm install -g npm@4
     - node_js: '8'
