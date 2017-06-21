@@ -19,7 +19,8 @@
     "build:umd": "rollup -c",
     "build:all": "npm run build && npm run build:cjs && npm run build:es5 && npm run build:umd",
     "minify": "uglifyjs ./es5/index.js -c -m -o ./es5/jsx2posthtml.min.js",
-    "prepublishOnly": "npm run test && npm run clean && npm run build:all && npm run minify"
+    "prepublishOnly": "npm run test",
+    "prepare": "npm run clean && npm run build:all && npm run minify"
   },
   "repository": {
     "type": "git",
