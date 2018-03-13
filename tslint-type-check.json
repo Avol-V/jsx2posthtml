@@ -1,3 +1,0 @@
-{
-	"extends": ["tslint-config-m18", "tslint-config-m18/typeCheck"]
-}

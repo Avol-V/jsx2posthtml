@@ -1,10 +1,12 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
-	entry: './es5-esm/index.js',
-	dest: './es5/index.js',
-	format: 'umd',
-	moduleName: 'jsx2posthtml',
+	input: './es5-esm/index.js',
+	output: {
+		file: './es5/index.js',
+		format: 'umd',
+		name: 'jsx2posthtml',
+	},
 	plugins: [
 			nodeResolve(
 				{

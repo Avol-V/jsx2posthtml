@@ -11,10 +11,11 @@
 function h(
 	tag: string | FunctionalComponent,
 	attrs: JSX.ElementAnyAttributes,
-	...content: JSX.ElementContentItem[],
+	...content: JSX.ElementContentItem[]
 ): JSX.Element
 {
 	// If content elements are given as an array
+	// tslint:disable-next-line:no-parameter-reassignment
 	content = flattenArray<JSX.ElementContentItem>( content );
 	
 	if ( typeof tag === 'function' )
@@ -113,7 +114,7 @@ const MAP_TO_DOM_ATTRIBUTES: {[key: string]: string} = {
 };
 
 /**
- * Prepare attrubutes to use in HTML.
+ * Prepare attributes to use in HTML.
  * 
  * @param attrs Element attributes.
  */

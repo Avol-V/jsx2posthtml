@@ -567,7 +567,7 @@ describe(
 		const parser = require( 'posthtml-parser' );
 		
 		it(
-			'should produce simular AST',
+			'should produce similar AST',
 			() =>
 			{
 				const items = ['one', 'two', 'three'];
