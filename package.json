@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m18ru/jsx2posthtml.git"
+    "url": "git+https://github.com/Avol-V/jsx2posthtml.git"
   },
   "keywords": [
     "hyperscript",
@@ -33,12 +33,12 @@
     "jsx",
     "posthtml"
   ],
-  "author": "Andrey Avol Volynkin <code@m18.ru>",
+  "author": "Andrey Volynkin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/m18ru/jsx2posthtml/issues"
+    "url": "https://github.com/Avol-V/jsx2posthtml/issues"
   },
-  "homepage": "https://github.com/m18ru/jsx2posthtml#readme",
+  "homepage": "https://github.com/Avol-V/jsx2posthtml#readme",
   "devDependencies": {
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",

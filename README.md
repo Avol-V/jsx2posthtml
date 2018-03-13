@@ -239,14 +239,14 @@ You can find more examples in [tests](test/index.tsx).
 [npm]: https://img.shields.io/npm/v/jsx2posthtml.svg
 [npm-url]: https://npmjs.com/package/jsx2posthtml
 
-[deps]: https://img.shields.io/david/m18ru/jsx2posthtml.svg
-[deps-url]: https://david-dm.org/m18ru/jsx2posthtml
+[deps]: https://img.shields.io/david/Avol-V/jsx2posthtml.svg
+[deps-url]: https://david-dm.org/Avol-V/jsx2posthtml
 
-[deps-dev]: https://img.shields.io/david/dev/m18ru/jsx2posthtml.svg
-[deps-dev-url]: https://david-dm.org/m18ru/jsx2posthtml?type=dev
+[deps-dev]: https://img.shields.io/david/dev/Avol-V/jsx2posthtml.svg
+[deps-dev-url]: https://david-dm.org/Avol-V/jsx2posthtml?type=dev
 
-[deps-optional]: https://img.shields.io/david/optional/m18ru/jsx2posthtml.svg
-[deps-optional-url]: https://david-dm.org/m18ru/jsx2posthtml?type=optional
+[deps-optional]: https://img.shields.io/david/optional/Avol-V/jsx2posthtml.svg
+[deps-optional-url]: https://david-dm.org/Avol-V/jsx2posthtml?type=optional
 
-[build]: https://img.shields.io/travis/m18ru/jsx2posthtml.svg
-[build-url]: https://travis-ci.org/m18ru/jsx2posthtml
+[build]: https://img.shields.io/travis/Avol-V/jsx2posthtml.svg
+[build-url]: https://travis-ci.org/Avol-V/jsx2posthtml
